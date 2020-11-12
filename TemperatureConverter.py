@@ -8,7 +8,7 @@ Conversion de temperatures
 joues = True
 while joues:
     valeur = float(input("Saississez la valeur de la temperature de depart: "))
-    depart = input("Quelle est l'unite de la valeur entre (En majuscule):")
+    depart = input("Quelle est l'unite de la valeur entre: ")
     arrive = input("Vers quelle unite voulez-vous convertir?")
 
     def ck():
@@ -18,6 +18,7 @@ while joues:
             print("Cette valeur ne peut pas etre convertit en Kelvin.")
         else:
             valeur += 273.15
+            print("")
             print(valeur, arrive)
         
             
@@ -25,6 +26,7 @@ while joues:
         global valeur
         global arrive
         valeur = 9*(valeur / 5) + 32
+        print("")
         print(valeur, arrive)
         
 
@@ -35,6 +37,7 @@ while joues:
             print("La valeur Minimale du Kelvin est 0")
             return
         valeur -= 273.15
+        print("")
         print(round(valeur, 2), arrive)
 
         
@@ -46,6 +49,7 @@ while joues:
             print("La valeur Minimale du Kelvin est 0")
             return
         valeur = valeur * (9/5) - 459.67
+        print("")
         print(round(valeur, 2), arrive)
         
 
@@ -53,6 +57,7 @@ while joues:
         global valeur
         global arrive
         valeur = (valeur - 32) * 5/9
+        print("")
         print(round(valeur, 2), arrive)
         
     
@@ -60,10 +65,12 @@ while joues:
         global valeur
         global arrive
         valeur = (valeur - 32) * 5/9 + 273.15
+        print("")
         print(round(valeur, 2), arrive)
         
 
     if depart == arrive:
+        print("")
         print(valeur, arrive)
 
 
