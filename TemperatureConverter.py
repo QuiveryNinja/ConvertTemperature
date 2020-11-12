@@ -41,6 +41,7 @@ while joues:
 
     def kf():
         global valeur
+        global arrive
         if valeur < 0:
             print("La valeur Minimale du Kelvin est 0")
             return
