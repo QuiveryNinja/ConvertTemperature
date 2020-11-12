@@ -31,12 +31,19 @@ while joues:
     def kc():
         global valeur
         global arrive
+        if valeur < 0:
+            print("La valeur Minimale du Kelvin est 0")
+            return
         valeur -= 273.15
         print(round(valeur, 2), arrive)
+
         
 
     def kf():
         global valeur
+        if valeur < 0:
+            print("La valeur Minimale du Kelvin est 0")
+            return
         valeur = valeur * (9/5) - 459.67
         print(round(valeur, 2), arrive)
         
